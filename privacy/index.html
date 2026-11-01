@@ -17,11 +17,11 @@
   <main class="shell">
     <article class="document">
       <h1>Privacy Policy</h1>
-      <p class="meta">Updated: November 1, 2026. Free access applies from version 2.3.</p>
+      <p class="meta">Updated: November 1, 2026. Free access applies from version 2.3. Optional product analytics starts with version 2.3 (build 11).</p>
 
       <p>This Privacy Policy explains how MoreBrain (the “App”) handles information. The App is provided by Aleksandr Koroviakovskii, Individual Entrepreneur, Georgia (“we”, “us”, or “our”).</p>
 
-      <div class="callout"><strong>In short:</strong> the App does not require an account, does not contain advertising, and does not use third-party analytics or tracking. Your profiles, settings, training history, progress, and saved game state are kept locally on your device and are not sent to us.</div>
+      <div class="callout"><strong>In short:</strong> the App is free, requires no account and has no ads or cross-app tracking. Your full profiles, answers, settings, progress and saved games remain on your device. Optional first-party product analytics is off until an adult explicitly enables it for their own local profile. You can decline, turn it off and request deletion without losing any features.</div>
 
       <h2>Information stored on your device</h2>
       <p>The App stores the information needed to provide its features locally on your device. This may include:</p>
@@ -31,7 +31,7 @@
         <li>training history, answers, results, progress, and statistics;</li>
         <li>saved exercise and game state.</li>
       </ul>
-      <p>We do not operate a server that receives this information.</p>
+      <p>We do not upload your profile name, typed answers, full training history or saved game state. If you separately enable optional analytics, the limited data listed below is sent to our own analytics service.</p>
 
       <h2>Free access from version 2.3</h2>
       <p>All games, trainers, lessons, settings and local profiles in version 2.3 and later are free. These versions do not offer subscriptions or in-app purchases, do not contact StoreKit to check purchase status, and do not require a purchase or restoration to unlock content.</p>
@@ -40,14 +40,25 @@
       <h2>Device backups</h2>
       <p>Depending on your Apple device and iCloud settings, Apple may include the App’s local data in a device or iCloud backup. Those backups are controlled by you and Apple, not by us.</p>
 
-      <h2>Tracking, advertising, and analytics</h2>
-      <p>The App does not track you across apps or websites. It does not contain advertising, third-party analytics SDKs, or personalized advertising technologies.</p>
-
-      <h2>Children’s privacy</h2>
-      <p>The App is designed for a general audience, including families. Because no account is required and App activity is not sent to us, we do not knowingly collect personal information from children through the App. Parents and guardians should supervise children's use of the device.</p>
-
-      <h2>Deleting your data</h2>
-      <p>You may remove the App’s locally stored data by deleting the App from your device. A device or iCloud backup may restore data if you later reinstall the App; backup management is available in your Apple device settings.</p>
+      <h2>Optional first-party product analytics</h2>
+      <p>Analytics is disabled by default. At first use of a local profile, the App offers two choices: allow analytics or continue without it. To enable it, you must affirm that you are at least 18, use the profile yourself and agree to the described collection. Consent applies to that profile only; new, child and shared profiles do not inherit another profile's consent. Declining or withdrawing never limits games, lessons, settings or progress.</p>
+      <p>After consent, we receive a random installation identifier and a separate random profile identifier, the consent time, event identifiers and times, app sessions and active time, opened sections, games and trainers, allowed numerical settings, levels, starts, pauses, retries, hints, exits, completion results, points, accuracy and durations. We also receive the App/build version, OS version, device model, App language and limited technical failure events. Not every activity has every metric. Historical activity before consent is not uploaded.</p>
+      <p>These identifiers are pseudonymous, not fully anonymous. They link visits within MoreBrain; they do not reveal your Apple Account or email. We do not collect your profile name, contact list, email, phone number, exact location, advertising identifier, hardware serial number, typed answers, screen recordings or browsing history for analytics. We do not fingerprint devices or link this data to other companies' apps or websites.</p>
+      <h2>Purpose and legal basis</h2>
+      <p>We process optional analytics on the basis of your consent to understand usage, find difficult or confusing activities, improve reliability and prepare aggregate audience reports for partners. We do not use these results to diagnose health conditions or infer intelligence. Individual histories, installation/profile identifiers and row-level analytics are not sold or disclosed to advertisers, data brokers or advertising networks. There is no public leaderboard in this version.</p>
+      <h2>Hosting and security</h2>
+      <p>Analytics is sent over HTTPS to our own service at <code>telefonunet.ru/native-analytics/v1/</code>, hosted in Russia. The analytics database is separate from the website's accounts and payment records; no account or billing data is joined to it. The service has no public reporting endpoint, and owner access is restricted. We do not use third-party analytics or advertising SDKs.</p>
+      <p>The service necessarily handles a network address transiently to deliver a request and apply in-memory abuse limits. The native analytics endpoint does not persist IP addresses, User-Agent strings or request bodies in access logs and does not derive a location from them. Visiting the separate legal/support website has the hosting behavior described below.</p>
+      <h2>Retention, withdrawal and deletion</h2>
+      <p>Analytics events are kept for a rolling period of up to 90 days and automatically expired. Unsent events are held on the device for no more than seven days, with a bounded queue. We do not create a separate indefinite archive of individual analytics histories.</p>
+      <p>In the App, open Profile &gt; Product analytics &gt; Turn off and delete analytics data. Collection stops immediately, queued analytics for that profile are erased, and the App requests deletion of its server-side analytics. If offline, the deletion receipt stays on the device and retries when the App can connect. The UI shows pending deletion until the server confirms it. A non-reversible hash of the revoked random request token may be retained for just over seven days solely to reject delayed/replayed requests. It contains no game history or installation/profile identifier.</p>
+      <p>Deleting a local profile also requests deletion of that profile's analytics. Removing the App itself cannot send an offline deletion request: when possible, use the in-app deletion control before uninstalling. Otherwise the retention period still applies. Withdrawn or deleted analytics cannot be recovered. Local training history and saved progress are not deleted by the analytics control.</p>
+      <h2>Your choices and rights</h2>
+      <p>You may refuse or withdraw analytics consent at any time. Depending on applicable law, you may also request access, correction, restriction or deletion of personal data, object where applicable, and complain to your data-protection authority. Contact us using the address below. Because we do not associate analytics with names or emails, we may need proportionate information from the installed App to identify and authenticate the relevant analytics without collecting unnecessary identity documents. We do not request your Apple password or verification code.</p>
+      <h2>Children and shared profiles</h2>
+      <p>The App serves a general audience, including families, but optional server analytics is intended only for adults using their own profile. A person under 18, a parent creating a child's profile, or a person using a shared profile should continue without analytics. We do not offer parental authorization for child analytics in this version. If we learn that analytics was enabled for a child, we will disable it and remove the relevant data when identifiable. All educational features remain available without analytics.</p>
+      <h2>Local data and device backups</h2>
+      <p>Profiles, answers, training history, progress and saved game state remain locally stored. Deleting the App removes local data, subject to Apple device/iCloud backups and restore settings. Those backups are controlled by you and Apple. The analytics permission and any unsent deletion receipt may also be part of a device backup.</p>
 
       <h2>This website</h2>
       <p>These legal and support pages are hosted on GitHub Pages. When you visit them, GitHub may process technical information such as an IP address and browser data for security and service operation. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>.</p>
@@ -69,3 +80,4 @@
   </footer>
 </body>
 </html>
+
