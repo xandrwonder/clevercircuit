@@ -1,0 +1,71 @@
+:root {
+  color-scheme: light dark;
+  --background: #f2f5ef;
+  --surface: #fff;
+  --ink: #16261e;
+  --muted: #52635a;
+  --accent: #205e43;
+  --line: #d8e1d9;
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  line-height: 1.6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #101914;
+    --surface: #19241d;
+    --ink: #eef5ee;
+    --muted: #b4c3b7;
+    --accent: #a5dfb8;
+    --line: #3b5042;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--ink);
+}
+
+header, main, footer {
+  width: min(100% - 2rem, 48rem);
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: .75rem 1.5rem;
+  flex-wrap: wrap;
+  padding-block: 1.4rem;
+}
+
+nav { display: flex; flex-wrap: wrap; gap: .4rem 1.1rem; }
+a { color: var(--accent); text-underline-offset: .18em; }
+a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.brand { font-weight: 750; text-decoration: none; }
+h1, h2 { line-height: 1.15; }
+h1 { font-size: clamp(1.8rem, 6vw, 3.2rem); margin: 0 0 1.2rem; letter-spacing: -.045em; }
+h2 { font-size: 1.2rem; margin: 1.9rem 0 .65rem; }
+p { margin: 0 0 .85rem; }
+main {
+  padding: clamp(1.15rem, 5vw, 3rem);
+  border: 1px solid var(--line);
+  border-radius: 1.35rem;
+  background: var(--surface);
+}
+
+footer { color: var(--muted); font-size: .9rem; padding-block: 1.25rem; }
+.muted, .status { color: var(--muted); }
+details { padding: .85rem 0; border-block-end: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 650; }
+details p { margin: .6rem 0 .1rem; }
+.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; padding: 0; list-style: none; }
+.gallery img { display: block; width: 100%; height: auto; border-radius: .65rem; border: 1px solid var(--line); }
+.gallery a { display: grid; gap: .35rem; }
+@media (min-width: 680px) {
+  .gallery.phone { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
